@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>:: DSI - University Admin ::</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Favicon-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="assets/css/themes/all-themes.css" />
+</head>
+
+<body class="theme-blue-grey">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-blush">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+
+    <!-- Morphing Search  -->
+    <div id="morphsearch" class="morphsearch">
+        <form class="morphsearch-form">
+            <div class="form-group m-0">
+                <input value="" type="search" placeholder="Search..." class="form-control morphsearch-input" hidden />
+                <button class="morphsearch-submit" type="submit">Search</button>
+            </div>
+        </form>
+        <div class="morphsearch-content">
+            <div class="dummy-column">
+                <h2>People</h2>
+                <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg" alt=""
+                        class="img-fluid" />
+                    <h3>Sara Soueidan</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Rachel Smith</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Peter Finlan</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Patrick Cox</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Tim Holman</h3>
+                </a>
+            </div>
+            <div class="dummy-column">
+                <h2>Popular</h2>
+                <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg" alt=""
+                        class="img-fluid" />
+                    <h3>Sara Soueidan</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Rachel Smith</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Peter Finlan</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Patrick Cox</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Tim Holman</h3>
+                </a>
+            </div>
+            <div class="dummy-column">
+                <h2>Recent</h2>
+                <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg" alt=""
+                        class="img-fluid" />
+                    <h3>Sara Soueidan</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Rachel Smith</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Peter Finlan</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Patrick Cox</h3>
+                </a> <a class="dummy-media-object" href="#"> <img class="round" src="assets/images/sm/avatar1.jpg"
+                        alt="" class="img-fluid" />
+                    <h3>Tim Holman</h3>
+                </a>
+            </div>
+        </div>
+        <!-- /morphsearch-content -->
+        <span class="morphsearch-close"></span>
+    </div>
+
+    <!-- Top Bar -->
+    <span id="appendheader"></span>
+    <!-- #Top Bar -->
+
+    <!--Side menu and right menu -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+
+            <!-- #User Info -->
+            <!-- Menu -->
+
+            <span id="appendsidebar"></span>
+
+            <span class="maintoggle" id="placements" hidden></span>
+            <span class="subtoggle" id="jobopen" hidden></span>
+
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#skins">Skins</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">Setting</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red">
+                            <div class="red"></div><span>Red</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div><span>Purple</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div><span>Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div><span>Cyan</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div><span>Green</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div><span>Deep Orange</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div><span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div><span>Black</span>
+                        </li>
+                        <li data-theme="blush" class="active">
+                            <div class="blush"></div><span>Blush</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="chat">
+                    <div class="demo-settings">
+                        <div class="search">
+                            <div class="input-group">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" placeholder="Search..." required autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Recent</h6>
+                        <ul>
+                            <li class="online">
+                                <div class="media">
+                                    <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt="" class="img-fluid"> </a>
+                                    <div class="media-body">
+                                        <span class="name">Claire Sassu</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar2.jpg" alt="" class="img-fluid"> </a>
+                                    <div class="media-body">
+                                        <span class="name">Maggie jackson</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar3.jpg" alt="" class="img-fluid"> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span class="message">Ready for the
+                                            meeti...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h6>Contacts</h6>
+                        <ul>
+                            <li class="offline">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar4.jpg" alt="" class="img-fluid"> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt="" class="img-fluid"> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="offline">
+                                <div class="media"> <a class="pull-left " role="button" tabindex="0"> <img
+                                            class="media-object " src="assets/images/xs/avatar2.jpg" alt=""
+                                            class="img-fluid"> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+    <!--Side menu and right menu -->
+
+    <!-- main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Job Openings</h2>
+
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card">
+                        <img src="assets/images/logos/Accenture.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Kernal Core Developer</h3>
+                            <p>ISE, CSE</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Time: <strong class="col-green">36 Hours</strong></p>
+                        <p>Students: <strong class="col-green">88</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card">
+                        <img src="assets/images/logos/Capgemini.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Software Programmer</h3>
+                            <p>CSE, ISE</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Time: <strong class="col-green">36 Hours</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">88</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/informatica.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Trainee Chemist</h3>
+                            <p>Msc</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Time: <strong class="col-green">36 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Dr.Vasaray</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">88</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/Infosys.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Mechanical Engineer</h3>
+                            <p>ME, IE</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering, VTU</strong> Time: <strong class="col-green">12 Sessions</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Dr.Anantha Swamy</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">88</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/l&t.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Electronics Engineer</h3>
+                            <!-- <p>Third Semester, CSE</p> -->
+                            <p>EC, EEE</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering, VTU</strong> Time: <strong class="col-green">36 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Raghav</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">92</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/Siemens.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>C++ Programmer</h3>
+                            <!-- <p>First Semester, CSE</p> -->
+                            <p>CSE, ISE</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering, VTU</strong> Time: <strong class="col-green">36 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Ramya</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">92</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/Accenture.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Logic Designer</h3>
+                            <!-- <p>Third Semester, CSE</p> -->
+                            <p>BE, B.Tech</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering, VTU</strong> Time: <strong class="col-green">22 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Wil Smith</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">92</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/l&t.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Unix Core Developer</h3>
+                            <!-- <p>Third Semester, CSE</p> -->
+                            <p>BE, B.Tech</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering, VTU</strong> Time: <strong class="col-green">24 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Smitha</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">92</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card">
+                        <img src="assets/images/logos/Siemens.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Operating System Analyst</h3>
+                            <!-- <p>Fifth Semester, CSE</p> -->
+                            <p>BE, B.Tech</br>Bengaluru, Karnatakars</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering, VTU</strong> Time: <strong class="col-green">36 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Gopal</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">90</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/Hp.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Data Scientist</h3>
+                            <!-- <p>Fifth Semester, CSE</p> -->
+                            <p>BE, B.Tech, MCA</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor Of Engineering,VTU</strong> Time: <strong class="col-green">36 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Sucharitha</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">90</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/informatica.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Micro Chip Developer</h3>
+                            <!-- <p>Fifth Semester, CSE</p> -->
+                            <p>E&C, EEE</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor Of Engineering,VTU</strong> Time: <strong class="col-green">22 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Sucharitha</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">90</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3"> -->
+                <!-- <div class="thumbnail card"><img src="assets/images/course-1.jpg" alt=""  class="img-fluid"> -->
+                <!-- <div class="caption  body"> -->
+                <!-- <h3>Micro Processor</h3> -->
+                <!-- <p>Fifth Semester, CSE</p> -->
+                <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering,VTU</strong>Time: <strong class="col-green">22 Hours</strong></p> -->
+                <!-- <p>Prof.: Prof. <strong>Anand</strong></p> -->
+                <!-- <p>Students: <strong class="col-green">90</strong></p> -->
+                <!-- <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read more</a> -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="thumbnail card"><img src="assets/images/logos/Wipro.jpg" alt="" class="img-fluid">
+                        <div class="caption  body">
+                            <h3>Java Programmer</h3>
+                            <!-- <p>Fifth Semester, CSE</p> -->
+                            <p>CSE, ISE</br>Bengaluru, Karnataka</p>
+                            <!-- <p>Course: <strong class="col-blush">Bachelor of Engineering, VTU</strong>Time: <strong class="col-green">24 Hours</strong></p> -->
+                            <!-- <p>Prof.: Prof. <strong>Nayana</strong></p> -->
+                            <!-- <p>Students: <strong class="col-green">90</strong></p> -->
+                            <a href="courses-info.html" class="btn  btn-raised btn-info waves-effect" role="button">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <a href="#" class="btn btn-raised waves-effect g-bg-blush2" role="button">Load more</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="color-bg"></div>
+    <!-- Jquery Core Js -->
+    <script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search -->
+
+    <!--<script src="assets/bundles/mainscripts.bundle.js"></script>-->
+    <!-- Custom Js -->
+    <script src="js/sidebar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script>
+    <script src="js/headerbar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script><!-- Custom Js -->
+</body>
+
+</html>

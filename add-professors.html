@@ -1,0 +1,529 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>:: DSI - University Admin ::</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Favicon-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Dropzone Css -->
+    <link href="assets/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+        rel="stylesheet" />
+    <!-- Wait Me Css -->
+    <link href="assets/plugins/waitme/waitMe.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Custom Css -->
+
+
+    <link rel="stylesheet" href="assets/css/themes/all-themes.css" />
+</head>
+
+<body class="theme-blue-grey">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-blush">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+
+    <!-- Morphing Search  -->
+    <div id="morphsearch" class="morphsearch">
+        <form class="morphsearch-form">
+            <div class="form-group m-0">
+                <input value="" type="search" placeholder="Search..." class="form-control morphsearch-input" hidden />
+                <button class="morphsearch-submit" type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- /morphsearch-content -->
+        <span class="morphsearch-close"></span>
+    </div>
+
+    <!-- Top Bar -->
+    <span id="appendheader"></span>
+    <!-- #Top Bar -->
+
+    <!--Side menu and right menu -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+
+            <!-- #User Info -->
+            <!-- Menu -->
+
+            <span id="appendsidebar"></span>
+
+            <span class="maintoggle" id="professors" hidden></span>
+            <span class="subtoggle" id="addprofessor" hidden></span>
+
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#skins">Skins</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">Setting</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red">
+                            <div class="red"></div><span>Red</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div><span>Purple</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div><span>Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div><span>Cyan</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div><span>Green</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div><span>Deep Orange</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div><span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div><span>Black</span>
+                        </li>
+                        <li data-theme="blush" class="active">
+                            <div class="blush"></div><span>Blush</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="chat">
+                    <div class="demo-settings">
+                        <div class="search">
+                            <div class="input-group">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" placeholder="Search..." required autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Recent</h6>
+                        <ul>
+                            <li class="online">
+                                <div class="media">
+                                    <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Claire Sassu</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Maggie jackson</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar3.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span class="message">Ready for the
+                                            meeti...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h6>Contacts</h6>
+                        <ul>
+                            <li class="offline">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar4.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="offline">
+                                <div class="media"> <a class="pull-left " role="button" tabindex="0"> <img
+                                            class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+    <!--Side menu and right menu -->
+
+    <!-- main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Add Professor</h2>
+
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Basic Information <small>Description text here...</small> </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle"
+                                        data-toggle="dropdown" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another
+                                                action</a></li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something
+                                                else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="datepicker form-control"
+                                                placeholder="Date of Birth">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group drop-custum">
+                                        <select class="form-control show-tick">
+                                            <option value="">-- Gender --</option>
+                                            <option value="10">Male</option>
+                                            <option value="20">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Department">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Position">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Enter Your Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Website URL">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <form action="/" id="frmFileUpload" class="dropzone" method="post"
+                                        enctype="multipart/form-data">
+                                        <div class="dz-message">
+                                            <div class="drag-icon-cph"> <i class="material-icons">touch_app</i> </div>
+                                            <h3>Drop files here or click to upload.</h3>
+                                            <em>(This is just a demo dropzone. Selected files are <strong>not</strong>
+                                                actually uploaded.)</em>
+                                        </div>
+                                        <div class="fallback">
+                                            <input name="file" type="file" multiple />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <textarea rows="4" class="form-control no-resize"
+                                                placeholder="Please type what you want..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-raised g-bg-blush2">Submit</button>
+                                    <button type="submit" class="btn btn-raised btn-default">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Professor's Account Information <small>Description text here...</small> </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle"
+                                        data-toggle="dropdown" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another
+                                                action</a></li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something
+                                                else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="User Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-raised btn-default">Submit</button>
+                                    <button type="submit" class="btn btn-raised btn-default">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Professor Social Media Info <small>Description text here...</small> </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle"
+                                        data-toggle="dropdown" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another
+                                                action</a></li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something
+                                                else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Facebook">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Twitter">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Google Plus">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="LinkedIN ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Behance">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="dribbble">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-raised btn-default">Submit</button>
+                                    <button type="submit" class="btn btn-raised btn-default">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content -->
+
+    <div class="color-bg"></div>
+
+    <!-- Jquery Core Js -->
+    <script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search -->
+
+
+    <script src="assets/plugins/autosize/autosize.js"></script> <!-- Autosize Plugin Js -->
+    <script src="assets/plugins/momentjs/moment.js"></script> <!-- Moment Plugin Js -->
+    <script src="assets/plugins/dropzone/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!--<script src="assets/bundles/mainscripts.bundle.js"></script>-->
+    <!-- Custom Js -->
+    <script src="js/sidebar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script>
+    <script src="js/headerbar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script><!-- Custom Js -->
+    <script src="assets/js/pages/forms/basic-form-elements.js"></script>
+</body>
+
+</html>

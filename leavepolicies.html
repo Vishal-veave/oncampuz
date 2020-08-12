@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>:: DSI - University Admin ::</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Favicon-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Dropzone Css -->
+    <link href="assets/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+        rel="stylesheet" />
+    <!-- Wait Me Css -->
+    <link href="assets/plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Custom Css -->
+
+
+    <link rel="stylesheet" href="assets/css/themes/all-themes.css" />
+</head>
+
+<body class="theme-blue-grey">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-blush">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+
+    <!-- Morphing Search  -->
+    <div id="morphsearch" class="morphsearch">
+        <form class="morphsearch-form">
+            <div class="form-group m-0">
+                <input value="" type="search" placeholder="Search..." class="form-control morphsearch-input" hidden />
+                <button class="morphsearch-submit" type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- /morphsearch-content -->
+        <span class="morphsearch-close"></span>
+    </div>
+
+    <!-- Top Bar -->
+    <span id="appendheader"></span>
+    <!-- #Top Bar -->
+
+    <!--Side menu and right menu -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+
+            <!-- #User Info -->
+            <!-- Menu -->
+
+            <span id="appendsidebar"></span>
+
+            <span class="maintoggle" id="leaves" hidden></span>
+            <span class="subtoggle" id="leavepolicies" hidden></span>
+
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#skins">Skins</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">Setting</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red">
+                            <div class="red"></div><span>Red</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div><span>Purple</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div><span>Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div><span>Cyan</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div><span>Green</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div><span>Deep Orange</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div><span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div><span>Black</span>
+                        </li>
+                        <li data-theme="blush" class="active">
+                            <div class="blush"></div><span>Blush</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="chat">
+                    <div class="demo-settings">
+                        <div class="search">
+                            <div class="input-group">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" placeholder="Search..." required autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Recent</h6>
+                        <ul>
+                            <li class="online">
+                                <div class="media">
+                                    <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Claire Sassu</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Maggie jackson</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar3.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span class="message">Ready for the
+                                            meeti...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h6>Contacts</h6>
+                        <ul>
+                            <li class="offline">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar4.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="offline">
+                                <div class="media"> <a class="pull-left " role="button" tabindex="0"> <img
+                                            class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+    <!--Side menu and right menu -->
+
+    <!-- main content -->
+    <section class="content profile-page">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Leave Policy</h2>
+
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class=" card">
+                        <img src="assets/images/lve-pol.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <h2>About Leave Policy</h2>
+                        </div>
+                        <div class="body">
+                            <p>People are the most valuable asset of an organization. Lack of proper leave management
+                                can lead to unauthorized absence of employees from duty, lower productivity, fall in
+                                productivity hours, missing of important targets and so on. These types of issues can be
+                                resolved with a proper Leave Policy Manual for employees in workplace. </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab"
+                                        href="#report">Guidelines for Leave Policy</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#timeline">Types of
+                                        leave</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#report2">Cancellation
+                                        of leave</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#timeline1">Extension
+                                        of leave</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane in active" id="report">
+                                    <div class="wrap-reset">
+                                        <div class="mypost-list">
+
+                                            <hr>
+                                            <h4>Guidelines for Leave Policy</h4>
+                                            <ul class="dis">
+                                                <li>Leave cannot be claimed as a matter of right. Any kind of leave can
+                                                    be granted or refused depending upon the business demands. Leave of
+                                                    absence from work without proper approval will call for disciplinary
+                                                    action. Leave meaning is to go away for something for a short period
+                                                    of time.</li>
+                                                <li>The calendar year for leave is from January to December.</li>
+                                                <li>Leaves will be credited to employees account in the beginning of
+                                                    calendar year i.e. January. Earned Leave will be updated on a
+                                                    monthly basis for the leave earned during the month. It will be
+                                                    credited at the rate of 1.75 leave per month. For existing employees
+                                                    carried forward earned leave balance from previous year will be
+                                                    updated in the month of January.</li>
+                                                <li>It is mandatory for an employee to utilize 18 leaves during an year.
+                                                    It should be 12 EL and 6 CL. It is meant to fulfill the objective of
+                                                    maintaining the work life balance.</li>
+                                                <li>A Maximum of 9 earned leave can be carried forward to next year.
+                                                </li>
+                                                <li>An employee can avail paid leave depending upon the leave balance
+                                                    available to employee also unpaid leave can be availed when leave
+                                                    balance is exhausted and employee is in need of leave on approval
+                                                    from immediate manager, HOD and HR.</li>
+                                                <li>In case of planned leave it is employee responsibility to apply for
+                                                    leave in advance, however in case of unplanned leave employee must
+                                                    regularize leave within 2 days of resuming duty.</li>
+                                                <li>Leave for the purpose of LTA should be earned leave. It cannot be
+                                                    casual.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div role="tabpanel" class="tab-pane" id="timeline">
+                                    <div class="wrap-reset">
+                                        <div class="body">
+
+                                            <hr>
+                                            <h4>Types of leave</h4>
+                                            <p>There are different types of Leaves given and listed in Company HR Annual
+                                                Leave Policy. The leaves can be categorized as Annual Paid Leave or
+                                                Unpaid Leave. Some leave which are approved and granted to an employee
+                                                basis availability of leave balance are paid leave or leave with pay.
+                                            </p>
+                                            <p>However unpaid leave or leave without pay can be availed by an employee
+                                                at the time of emergency and when no leave balance left.</p>
+
+                                            <div class="mypost-list">
+
+
+                                                <ul class="dis">
+                                                    <li>Casual Leave</li>
+                                                    <li>Earned leave</li>
+                                                    <li>Maternity Leave</li>
+                                                    <li>Paternity Leave</li>
+                                                    <li>Leave without pay</li>
+                                                    <li>Compensatory off</li>
+
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div role="tabpanel" class="tab-pane" id="report2">
+                                    <div class="wrap-reset">
+                                        <div class="mypost-list">
+
+                                            <hr>
+                                            <h4>Cancellation of leave</h4>
+                                            <ul class="dis">
+                                                <li> Approved leave can be cancelled depending upon the business demand.
+                                                </li>
+                                                <li>Leave once cancelled by reporting manager an automatic notification
+                                                    will reach to the employee and the HR.</li>
+                                                <li>Leave balance will be updated accordingly by HR</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div role="tabpanel" class="tab-pane" id="timeline1">
+                                    <div class="wrap-reset">
+                                        <div class="mypost-list">
+
+                                            <hr>
+                                            <h4>Extension of leave</h4>
+                                            <ul class="dis">
+                                                <li> In case of extension of leave due to any unforeseen circumstances
+                                                    the employee must inform reporting manager in advance; once
+                                                    extension of leave is approved by reporting manager it is manager’s
+                                                    duty to inform HR. This is the case when leave extension has been
+                                                    told verbally or over the phone. It is employee responsibility to
+                                                    regularize leave on HRMS tool once employee has resumed back on
+                                                    duty.</li>
+                                                <li>The extended leave must be applied on HRMS tool in case of planned
+                                                    extension so that both the reporting manager and HR are informed
+                                                    automatically.</li>
+                                                <li>Leave balance is updated on HRMS tool by HR.</li>
+                                                <li>In case employee overstays without approval it will be treated as
+                                                    absence from duty and disciplinary action will be taken against the
+                                                    employee.</li>
+                                                <li>Leave extended without permission will be treated as loss of pay.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="color-bg"></div>
+    <!-- Jquery Core Js -->
+    <script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search -->
+
+
+    <script src="assets/plugins/autosize/autosize.js"></script> <!-- Autosize Plugin Js -->
+    <script src="assets/plugins/momentjs/moment.js"></script> <!-- Moment Plugin Js -->
+    <script src="assets/plugins/dropzone/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!--<script src="assets/bundles/mainscripts.bundle.js"></script>-->
+    <!-- Custom Js -->
+    <script src="js/sidebar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script>
+    <script src="js/headerbar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script><!-- Custom Js -->
+    <script src="assets/js/pages/forms/basic-form-elements.js"></script>
+</body>
+
+</html>
