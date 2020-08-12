@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>:: DSI - University Admin ::</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Favicon-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JQuery DataTable Css -->
+    <link href="assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="assets/css/themes/all-themes.css" />
+</head>
+
+<body class="theme-blue-grey">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-blush">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+
+    <!-- Morphing Search  -->
+    <div id="morphsearch" class="morphsearch">
+        <form class="morphsearch-form">
+            <div class="form-group m-0">
+                <input value="" type="search" placeholder="Search..." class="form-control morphsearch-input" hidden />
+                <button class="morphsearch-submit" type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- /morphsearch-content -->
+        <span class="morphsearch-close"></span>
+    </div>
+
+    <!-- Top Bar -->
+    <span id="appendheader"></span>
+    <!-- #Top Bar -->
+
+    <!--Side menu and right menu -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+
+            <!-- #User Info -->
+            <!-- Menu -->
+
+            <span id="appendsidebar"></span>
+
+            <span class="maintoggle" id="placements" hidden></span>
+            <span class="subtoggle" id="eligiblecandi" hidden></span>
+
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#skins">Skins</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">Setting</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red">
+                            <div class="red"></div><span>Red</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div><span>Purple</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div><span>Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div><span>Cyan</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div><span>Green</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div><span>Deep Orange</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div><span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div><span>Black</span>
+                        </li>
+                        <li data-theme="blush" class="active">
+                            <div class="blush"></div><span>Blush</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="chat">
+                    <div class="demo-settings">
+                        <div class="search">
+                            <div class="input-group">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" placeholder="Search..." required autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Recent</h6>
+                        <ul>
+                            <li class="online">
+                                <div class="media">
+                                    <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Claire Sassu</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Maggie jackson</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar3.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span class="message">Ready for the
+                                            meeti...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h6>Contacts</h6>
+                        <ul>
+                            <li class="offline">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar4.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="offline">
+                                <div class="media"> <a class="pull-left " role="button" tabindex="0"> <img
+                                            class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+    <!--Side menu and right menu -->
+
+    <!-- main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>ELIGIBLE CANDIDATES</h2>
+                <small>Taken from <a href="https://datatables.net/" target="_blank">datatables.net</a></small>
+            </div>
+            <!-- Basic Examples -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>All Departments</h2>
+                            <ul class="header-dropdown">
+                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle"
+                                        data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="zmdi zmdi-more-vert"></i> </a>
+                                    <!-- <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" placeholder="Search by Department Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" placeholder="Search by Semister">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <button type="submit"
+                                        class="btn btn-raised waves-effect g-bg-blush2">Search</button>
+
+                                </div>
+                            </div>
+                            <div class="body table-responsive">
+                                <table class="table table-bordered table-striped table-hover dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>no</th>
+                                            <th>Dept. Name</th>
+                                            <th>Semister</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>No. of Students</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>MBA</td>
+                                            <td>3</td>
+                                            <td>info@gamil.com</td>
+                                            <td>6789546876</td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>MBA</td>
+                                            <td>4</td>
+                                            <td>info@gamil.com</td>
+                                            <td>7766554433</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>MBA</td>
+                                            <td>2</td>
+                                            <td>info@gamil.com</td>
+                                            <td>6575574833</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>BE</td>
+                                            <td>7</td>
+                                            <td>info@gamil.com</td>
+                                            <td>898786562</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>M.COM</td>
+                                            <td>3</td>
+                                            <td>info@gamil.com</td>
+                                            <td>345678956</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>M.COM</td>
+                                            <td>4</td>
+                                            <td>info@gamil.com</td>
+                                            <td>8845677332</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>B.COM</td>
+                                            <td>6</td>
+                                            <td>info@gamil.com</td>
+                                            <td>234567890</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>B.COM</td>
+                                            <td>5</td>
+                                            <td>info@gamil.com</td>
+                                            <td>234567890</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>BBA</td>
+                                            <td>4</td>
+                                            <td>info@gamil.com</td>
+                                            <td>234567890</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>BBA</td>
+                                            <td>3</td>
+                                            <td>info@gamil.com</td>
+                                            <td>234567890</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>MCA</td>
+                                            <td>5</td>
+                                            <td>info@gamil.com</td>
+                                            <td>+123 456 7890</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>MCA</td>
+                                            <td>6</td>
+                                            <td>info@gamil.com</td>
+                                            <td>+9972008934</td>
+                                            <td>34</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Basic Examples -->
+                <!-- Exportable Table -->
+            </div>
+            <!-- #END# Exportable Table -->
+        </div>
+    </section>
+
+    <div class="color-bg"></div>
+    <!-- Jquery Core Js -->
+    <script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search -->
+
+    <!-- Jquery DataTable Plugin Js -->
+    <script src="assets/bundles/datatablescripts.bundle.js"></script>
+    <script src="assets/plugins/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+    <script src="assets/plugins/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+    <script src="assets/plugins/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+    <script src="assets/plugins/jquery-datatable/buttons/buttons.flash.min.js"></script>
+    <script src="assets/plugins/jquery-datatable/buttons/buttons.html5.min.js"></script>
+    <script src="assets/plugins/jquery-datatable/buttons/buttons.print.min.js"></script>
+
+    <!--<script src="assets/bundles/mainscripts.bundle.js"></script>-->
+    <!-- Custom Js -->
+    <script src="js/sidebar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script>
+    <script src="js/headerbar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script><!-- Custom Js -->
+    <script src="assets/js/pages/tables/jquery-datatable.js"></script>
+</body>
+
+</html>

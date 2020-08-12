@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>:: DSI - University Admin ::</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Favicon-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Dropzone Css -->
+    <link href="assets/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+        rel="stylesheet" />
+    <!-- Wait Me Css -->
+    <link href="assets/plugins/waitme/waitMe.css" rel="stylesheet" />
+    <!-- Bootstrap Select Css -->
+    <link href="assets/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Custom Css -->
+
+
+    <link rel="stylesheet" href="assets/css/themes/all-themes.css" />
+</head>
+
+<body class="theme-blue-grey">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-blush">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+
+    <!-- Morphing Search  -->
+    <div id="morphsearch" class="morphsearch">
+        <form class="morphsearch-form">
+            <div class="form-group m-0">
+                <input value="" type="search" placeholder="Search..." class="form-control morphsearch-input" hidden />
+                <button class="morphsearch-submit" type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- /morphsearch-content -->
+        <span class="morphsearch-close"></span>
+    </div>
+
+    <!-- Top Bar -->
+    <span id="appendheader"></span>
+    <!-- #Top Bar -->
+
+    <!--Side menu and right menu -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+
+            <!-- #User Info -->
+            <!-- Menu -->
+
+            <span id="appendsidebar"></span>
+
+            <span class="maintoggle" id="leaves" hidden></span>
+            <span class="subtoggle" id="appleave" hidden></span>
+
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#skins">Skins</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">Setting</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red">
+                            <div class="red"></div><span>Red</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div><span>Purple</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div><span>Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div><span>Cyan</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div><span>Green</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div><span>Deep Orange</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div><span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div><span>Black</span>
+                        </li>
+                        <li data-theme="blush" class="active">
+                            <div class="blush"></div><span>Blush</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="chat">
+                    <div class="demo-settings">
+                        <div class="search">
+                            <div class="input-group">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" placeholder="Search..." required autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Recent</h6>
+                        <ul>
+                            <li class="online">
+                                <div class="media">
+                                    <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Claire Sassu</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Maggie jackson</span> <span class="message">Can you share
+                                            the...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar3.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span class="message">Ready for the
+                                            meeti...</span> <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h6>Contacts</h6>
+                        <ul>
+                            <li class="offline">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar4.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="online">
+                                <div class="media"> <a role="button" tabindex="0"> <img class="media-object "
+                                            src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="offline">
+                                <div class="media"> <a class="pull-left " role="button" tabindex="0"> <img
+                                            class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                    <div class="media-body">
+                                        <span class="name">Joel King</span> <span
+                                            class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+    <!--Side menu and right menu -->
+
+    <!-- main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Apply Leave</h2>
+            </div>
+            <div class="row clearfix">
+
+                <div class="col-sm-2 col-md-2 col-lg-3">
+                    <div class="card">
+                        <div class="body stats">
+                            <p><b>Sick Leave</b></p>
+                            <span class="nol">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-3">
+                    <div class="card">
+                        <div class="body stats">
+                            <p><b>Casual Leave</b></p>
+                            <span class="nol">10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-3">
+                    <div class="card">
+                        <div class="body stats">
+                            <p><b>Maternity Leave</b></p>
+                            <span class="nol">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-3">
+                    <div class="card">
+                        <div class="body stats">
+                            <p><b>Compensatory Leave</b></p>
+                            <span class="nol">2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="card">
+
+                                        <div class="body">
+                                            <div class="demo-masked-input">
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-6 col-md-6">
+                                                        <b>Employee Name</b>
+                                                        <div class="input-group icon">
+                                                            <span class="input-group-addon"> <i
+                                                                    class="material-icons">person</i> </span>
+                                                            <div class="form-line">
+                                                                <input type="text" class="form-control date"
+                                                                    placeholder="Enter Name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6">
+                                                        <b>Leave Type</b>
+                                                        <div class="input-group icon">
+                                                            <span class="input-group-addon"> <i
+                                                                    class="material-icons">access_time</i> </span>
+                                                            <div class="form-line">
+                                                                <select class="form-control show-tick">
+                                                                    <option value="">-- Leave Type --</option>
+                                                                    <option value="10">Sick Leave</option>
+                                                                    <option value="20">Casual Leave</option>
+                                                                    <option value="10">Maternity Leave</option>
+                                                                    <option value="20">Compensatory Leave</option>
+                                                                    <!-- <option value="10">Sabbatical Leave</option> -->
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <b>From</b>
+                                                        <div class="input-group icon">
+                                                            <span class="input-group-addon"> <i
+                                                                    class="material-icons">date_range</i> </span>
+                                                            <div class="form-line dates">
+                                                                <input type="text" class="datepicker form-control" placeholder="From Date">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <b>To</b>
+                                                        <div class="input-group icon">
+                                                            <span class="input-group-addon"> <i
+                                                                    class="material-icons">date_range</i> </span>
+                                                            <div class="form-line">
+                                                                <input type="text" class="datepicker form-control"
+                                                                    placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <b>Number of days</b>
+                                                        <div class="input-group icon">
+                                                            <span class="input-group-addon"> <i
+                                                                    class="material-icons">date_range</i> </span>
+                                                            <div class="form-line">
+                                                                <input type="text" class="form-control datetime"
+                                                                    placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6">
+                                                        <b>Reason</b>
+                                                        <div class="input-group">
+                                                            <div class="form-line">
+                                                                <textarea rows="2" class="form-control no-resize"
+                                                                    placeholder="Enter reason for your leave"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button type="submit"
+                                                            class="btn  btn-raised bg-blue-grey waves-effect">Submit</button>
+                                                        <button type="submit"
+                                                            class="btn btn-raised btn-default">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content -->
+
+    <div class="color-bg"></div>
+
+    <!-- Jquery Core Js -->
+
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search -->
+
+
+    <script src="assets/plugins/autosize/autosize.js"></script> <!-- Autosize Plugin Js -->
+    <script src="assets/plugins/momentjs/moment.js"></script> <!-- Moment Plugin Js -->
+    <script src="assets/plugins/dropzone/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!--<script src="assets/bundles/mainscripts.bundle.js"></script>-->
+    <!-- Custom Js -->
+    <script src="js/sidebar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script>
+    <script src="js/headerbar.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script><!-- Custom Js -->
+    <script src="assets/js/pages/forms/basic-form-elements.js"></script>
+</body>
+
+</html>
